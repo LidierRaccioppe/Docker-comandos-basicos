@@ -9,6 +9,8 @@
 
 5. Para poder hacer ping se tiene que instalar otra vez el net tools en el otro contenedor abiendolo creado con `docker run -it --name dam_ubu2 ubuntu`, ahora en el primer contenedor se usa ping a la ip que tenga la otra maquina, y se puede hacer ping entre contenedores
    
-6. Usando `exit`, para salir del docker y `docker ps -a` te muestra como quedo el contenedor, en este caso quedo como Exited.
+6. Usando `exit`, para salir del docker y `docker ps -a` te muestra como quedo el contenedor, en este caso quedo como Exited, en el caso de solo cerrar la terminal aparece Up.
 
-7. Usando `docker stats -a+` te muestra las estadisticas que consume cada contenedor, al estar salido pone un 0B
+7. Usando `docker stats -a+` te muestra las estadisticas que consume cada contenedor, al estar Up pone un 876KiB.
+
+8. Usando `docker stats -a+` te muestra las estadisticas que consume cada contenedor, al estar Up consume 0.01%
